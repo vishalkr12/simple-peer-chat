@@ -1,8 +1,6 @@
 
 //var getUserMedia = require('getusermedia')
 var Peer = require('simple-peer')
-
-
 var video = document.createElement('video')
     document.body.appendChild(video)
   
@@ -53,9 +51,9 @@ if (getUserMedia) {
  function gotMedia (stream) {
               var peer1 = new Peer(
                 {
-                  initiator: location.hash === "#host",
+                  initiator: location.hash === '#host',
                   trickle: false,
-                  // config: { iceServers: [{ urls: 'stun:stun.l.google.com:19302' }, { urls: 'stun:global.stun.twilio.com:3478?transport=udp' }] },
+                  
                   //wrtc: wrtc,
                   stream: stream
                 })
