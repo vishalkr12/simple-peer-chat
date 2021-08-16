@@ -22,7 +22,7 @@
     "uuid": "^3.3.2"
   },
   "scripts": {
-    "start": "budo index.js:bundle.js"
+    "start": "budo index.js:bundle.js --live --host localhost"
   },
   "devDependencies": {
     "eslint": "^5.15.1",
